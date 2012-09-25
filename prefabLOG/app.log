@@ -1,0 +1,15 @@
+[2012-09-25 00:06:36.269] [TRACE] app - trace test from ps-log4js.js
+[2012-09-25 00:06:36.275] [DEBUG] app - debug test from ps-log4js.js
+[2012-09-25 00:06:36.275] [INFO] app - info test from ps-log4js.js
+[2012-09-25 00:06:36.275] [WARN] app - warn test from ps-log4js.js
+[2012-09-25 00:06:36.275] [ERROR] app - error test from ps-log4js.js
+[2012-09-25 00:06:36.275] [FATAL] app - fatal test from ps-log4js.js
+[2012-09-25 00:06:36.276] [DEBUG] app - log4js initialized
+[2012-09-25 00:07:32.780] [DEBUG] app - log4js initialized
+[2012-09-25 00:49:04.226] [TRACE] app - trace test from ps-log4js.js
+[2012-09-25 00:49:04.227] [DEBUG] app - debug test from ps-log4js.js
+[2012-09-25 00:49:04.227] [INFO] app - info test from ps-log4js.js
+[2012-09-25 00:49:04.227] [WARN] app - warn test from ps-log4js.js
+[2012-09-25 00:49:04.228] [ERROR] app - error test from ps-log4js.js
+[2012-09-25 00:49:04.228] [FATAL] app - fatal test from ps-log4js.js
+[2012-09-25 00:49:04.228] [DEBUG] app - log4js initialized
