@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gnome-panel-launcher
+Exec=/opt/google/chrome/google-chrome https://docs.google.com/document/d/1WgbupjlfqS84LDpMaTmwNPJvubqMh9TixlJ8ASQ0s0s/edit
+Name[en_US]=node tips
+Name=node tips
+Icon=gnome-panel-launcher

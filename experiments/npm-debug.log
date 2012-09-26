@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'nodejs', '/usr/bin/npm', 'install', 'node-loggly' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.9
+4 verbose read json /home/jochen/package.json
+5 verbose read json /home/jochen/node_modules/nano/package.json
+6 verbose read json /home/jochen/node_modules/proxy-by-url/package.json
+7 verbose read json /home/jochen/node_modules/hbs/package.json
+8 verbose read json /home/jochen/node_modules/shell/package.json
+9 verbose read json /home/jochen/node_modules/ws/package.json
+10 verbose read json /home/jochen/node_modules/mnm/package.json
+11 verbose read json /home/jochen/node_modules/amqp/package.json
+12 verbose read json /home/jochen/node_modules/node-reverse-proxy/package.json
+13 verbose read json /home/jochen/node_modules/connect/package.json
+14 verbose read json /home/jochen/node_modules/ref/package.json
+15 verbose read json /home/jochen/node_modules/loggly/package.json
+16 verbose read json /home/jochen/node_modules/express/package.json
+17 verbose read json /home/jochen/node_modules/pty.js/package.json
+18 verbose read json /home/jochen/node_modules/shoe/package.json
+19 verbose read json /home/jochen/node_modules/ffi/package.json
+20 verbose read json /home/jochen/node_modules/http-status/package.json
+21 verbose read json /home/jochen/node_modules/http-proxy/package.json
+22 verbose read json /home/jochen/node_modules/socket.io/package.json
+23 verbose read json /home/jochen/node_modules/tty.js/package.json
+24 verbose read json /home/jochen/node_modules/mongodb-rest/package.json
+25 verbose read json /home/jochen/node_modules/rabbit.js/package.json
+26 verbose read json /home/jochen/node_modules/cradle/package.json
+27 verbose read json /home/jochen/node_modules/xtend/package.json
+28 verbose read json /home/jochen/node_modules/domready/package.json
+29 verbose read json /home/jochen/node_modules/jake/package.json
+30 verbose read json /home/jochen/node_modules/log4js/package.json
+31 verbose read json /home/jochen/node_modules/vhost/package.json
+32 verbose read json /home/jochen/node_modules/csso/package.json
+33 verbose read json /home/jochen/node_modules/mongodb/package.json
+34 verbose read json /home/jochen/node_modules/java/package.json
+35 verbose read json /home/jochen/node_modules/dnode/package.json
+36 verbose read json /home/jochen/node_modules/ecstatic/package.json
+37 verbose read json /home/jochen/node_modules/uglify-js/package.json
+38 verbose read json /home/jochen/node_modules/colors/package.json
+39 warn package.json connect@2.3.4 No README.md file found!
+40 warn package.json vhost@0.0.2 No README.md file found!
+41 warn package.json mongodb@1.0.2 No README.md file found!
+42 verbose read json /home/jochen/package.json
+43 verbose cache add [ 'node-loggly', null ]
+44 silly cache add name=undefined spec="node-loggly" args=["node-loggly",null]
+45 verbose parsed url { pathname: 'node-loggly',
+45 verbose parsed url   path: 'node-loggly',
+45 verbose parsed url   href: 'node-loggly' }
+46 silly lockFile 77154d9b-node-loggly node-loggly
+47 verbose lock node-loggly /home/jochen/.npm/77154d9b-node-loggly.lock
+48 silly lockFile 77154d9b-node-loggly node-loggly
+49 verbose addNamed [ 'node-loggly', '' ]
+50 verbose addNamed [ null, '' ]
+51 silly lockFile 9ebac008-node-loggly node-loggly@
+52 verbose lock node-loggly@ /home/jochen/.npm/9ebac008-node-loggly.lock
+53 silly addNameRange { name: 'node-loggly', range: '', hasData: false }
+54 verbose url raw node-loggly
+55 verbose url resolving [ 'https://registry.npmjs.org/', './node-loggly' ]
+56 verbose url resolved https://registry.npmjs.org/node-loggly
+57 info retry registry request attempt 1 at 19:57:39
+58 http GET https://registry.npmjs.org/node-loggly
+59 http 404 https://registry.npmjs.org/node-loggly
+60 silly registry.get cb [ 404,
+60 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+60 silly registry.get     date: 'Wed, 26 Sep 2012 17:57:40 GMT',
+60 silly registry.get     'content-type': 'application/json',
+60 silly registry.get     'content-length': '52',
+60 silly registry.get     'cache-control': 'must-revalidate' } ]
+61 silly lockFile 9ebac008-node-loggly node-loggly@
+62 error 404 'node-loggly' is not in the npm registry.
+62 error 404 You should bug the author to publish it
+62 error 404
+62 error 404 Maybe try 'npm search loggly'
+62 error 404
+62 error 404 Note that you can also install from a
+62 error 404 tarball, folder, or http url, or git url.
+63 error System Linux 3.2.0-31-generic
+64 error command "nodejs" "/usr/bin/npm" "install" "node-loggly"
+65 error cwd /home/jochen/dev/code/node/prefabNODE/experiments
+66 error node -v v0.8.9
+67 error npm -v 1.1.59
+68 error code E404
+69 verbose exit [ 1, true ]

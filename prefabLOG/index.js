@@ -54,4 +54,31 @@ function   (log4js) {
 	logger.debug("log4js initialized");
 });
 
+var extend = require("xtend");
 
+module.exports = function(options){
+    return {
+        var defaults = {
+        	logglyConfig: {
+        		subdomain: "prefabsoft",
+        		auth: {
+        			username: "jochen",
+        			password: "l0ggly"
+        		},
+        		json: true
+        	}
+        };
+        
+        var settings = extend(defaults, options);
+        
+        var logglyClient = loggly.createClient(settings.logglyConfig);
+        var logglyInput = logglyClient.getInput('node-loggly');
+        
+        logglyInput.log('127.0.0.1 - Theres no place like home');
+        
+        
+/*        logglyClient.getInput('node-loggly', function (err, input) {
+        	input.log('127.0.0.1 - Theres no place like home');
+    	});*/
+    };
+};

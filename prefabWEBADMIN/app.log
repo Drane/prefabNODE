@@ -284,3 +284,9 @@
 [2012-09-25 03:23:52.854] [DEBUG] app - in prefabWEBADMIN index
 [2012-09-25 03:23:52.856] [DEBUG] app - ports[object Object]
 [2012-09-25 03:23:52.861] [DEBUG] app - uhttp://127.0.0.1:18962
+[2012-09-25 22:33:11.365] [DEBUG] app - log4js initialized
+[2012-09-25 22:33:11.437] [DEBUG] app - in prefabLIB
+[2012-09-25 22:33:23.906] [DEBUG] app - log4js initialized
+[2012-09-25 22:33:23.976] [DEBUG] app - in prefabWEBADMIN index
+[2012-09-25 22:33:23.978] [DEBUG] app - ports[object Object]
+[2012-09-25 22:33:23.984] [DEBUG] app - uhttp://127.0.0.1:18026

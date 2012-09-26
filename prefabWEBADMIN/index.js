@@ -18,8 +18,8 @@ requirejs(['prefabLOG','seaport','request'],function(log, seaport, request) {
 	var ports = seaport.connect(9090);
 	log.debug("ports"+ports);
 	ports.get('prefabWEBADMIN@0.0.0', function (ps) {
-	    var u = 'http://' + ps[0].host + ':' + ps[0].port;
-	    log.debug("u"+u);
-	    request(u).pipe(process.stdout);
+	    var url = 'http://' + ps[0].host + ':' + ps[0].port;
+	    log.debug("url: "+url);
+	    request(url).pipe(process.stdout);
 	});
 });
