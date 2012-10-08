@@ -1,19 +1,36 @@
-var requirejs = require('requirejs');
+var prefabLOG;
+var extend = require("xtend");
+var log4js = require("log4js");
+var loggly = require("prefabLOG-loggly");
 
-requirejs.config({
-    //Pass the top-level main.js/index.js require
-    //function to requirejs so that node modules
-    //are loaded relative to the top-level JS file.
-    nodeRequire: require
-});
-
-requirejs(['log4js'],
-function   (log4js) {
-    //foo and bar are loaded according to requirejs
-    //config, but if not found, then node's require
-    //is used to load the module.
+module.exports = exports = prefabLOG = function prefabLOG_module(options){
+	var defaults = {
+		clearConsoleOnLoad: false,
+		testLogging: false,
+		logglyConfig: {
+    		subdomain: "prefabsoft",
+    		auth: {
+    			username: "jochen",
+    			password: "l0ggly"
+    		},
+    		json: true
+		}
+	};
+	
+	var settings = (options?extend(defaults, options):defaults);
+	
+	var public_methods = {};
+	
+	if(settings.clearConsoleOnLoad)
+		console.log('\033[2J');
+	
 	console.log("in prefabLOG");
 	
+	/* via prefabLOG_loggly implementeren!
+	var logglyClient = loggly.createClient(settings.logglyConfig);
+    var logglyInput = logglyClient.getInput('node-loggly');
+    logglyInput.log('127.0.0.1 - Theres no place like home');*/
+    
 	log4js.configure({
 		appenders : [ {
 			type : 'console'
@@ -29,15 +46,17 @@ function   (log4js) {
 
 	var logger = log4js.getLogger('app');
 	logger.setLevel('TRACE');
-
-/*	logger.trace('trace test from ps-log4js.js');
-	logger.debug('debug test from ps-log4js.js');
-	logger.info('info test from ps-log4js.js');
-	logger.warn('warn test from ps-log4js.js');
-	logger.error('error test from ps-log4js.js');
-	logger.fatal('fatal test from ps-log4js.js');
-	console.log('console log test');
-	console.warn('console warn test');*/
+	
+	if(settings.testLogging){
+		logger.trace('trace test from ps-log4js.js');
+		logger.debug('debug test from ps-log4js.js');
+		logger.info('info test from ps-log4js.js');
+		logger.warn('warn test from ps-log4js.js');
+		logger.error('error test from ps-log4js.js');
+		logger.fatal('fatal test from ps-log4js.js');
+		console.log('console log test');
+		console.warn('console warn test');
+	}
 
 	function trace(message){logger.trace(message);}
 	function debug(message){logger.debug(message);}
@@ -45,40 +64,13 @@ function   (log4js) {
 	function warn(message){logger.warn(message);}
 	function fatal(message){logger.fatal(message);}
 
-	exports.trace = trace;
-	exports.debug = debug;
-	exports.info = info;
-	exports.warn = warn;
-	exports.fatal = fatal;
-
 	logger.debug("log4js initialized");
-});
-
-var extend = require("xtend");
-
-module.exports = function(options){
-    return {
-        var defaults = {
-        	logglyConfig: {
-        		subdomain: "prefabsoft",
-        		auth: {
-        			username: "jochen",
-        			password: "l0ggly"
-        		},
-        		json: true
-        	}
-        };
-        
-        var settings = extend(defaults, options);
-        
-        var logglyClient = loggly.createClient(settings.logglyConfig);
-        var logglyInput = logglyClient.getInput('node-loggly');
-        
-        logglyInput.log('127.0.0.1 - Theres no place like home');
-        
-        
-/*        logglyClient.getInput('node-loggly', function (err, input) {
-        	input.log('127.0.0.1 - Theres no place like home');
-    	});*/
-    };
+	
+	public_methods.trace = trace;
+	public_methods.debug = debug;
+	public_methods.info = info;
+	public_methods.warn = warn;
+	public_methods.fatal = fatal;
+	
+	return public_methods;
 };

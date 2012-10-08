@@ -1,0 +1,8 @@
+{
+  "remote": {
+    "default": {
+      "hub": "localhost:7001",
+      "secret": "drane"
+    }
+  }
+}

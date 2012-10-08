@@ -1,0 +1,18 @@
+{
+  "name": "cluster",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "seaport": "~0.8.1",
+    "airport": "~0.4.3",
+    "bouncy": "~1.3.1",
+    "deck": "0.0.4"
+  }
+}

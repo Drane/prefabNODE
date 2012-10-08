@@ -1,0 +1,18 @@
+{
+  "name": "commandertest",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "choice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "commander": "~1.0.4",
+    "colors": "~0.6.0-1",
+    "xtend": "~1.0.3",
+    "seaport": "~0.8.1"
+  }
+}

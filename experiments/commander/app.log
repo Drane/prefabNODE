@@ -1,0 +1,41 @@
+[2012-10-08 09:55:31.202] [TRACE] app - trace test from ps-log4js.js
+[2012-10-08 09:55:31.204] [DEBUG] app - debug test from ps-log4js.js
+[2012-10-08 09:55:31.206] [INFO] app - info test from ps-log4js.js
+[2012-10-08 09:55:31.207] [WARN] app - warn test from ps-log4js.js
+[2012-10-08 09:55:31.207] [ERROR] app - error test from ps-log4js.js
+[2012-10-08 09:55:31.207] [FATAL] app - fatal test from ps-log4js.js
+[2012-10-08 09:55:31.209] [DEBUG] app - log4js initialized
+[2012-10-08 09:56:28.071] [TRACE] app - trace test from ps-log4js.js
+[2012-10-08 09:56:28.112] [TRACE] app - trace test from ps-log4js.js
+[2012-10-08 09:56:28.073] [DEBUG] app - debug test from ps-log4js.js
+[2012-10-08 09:56:28.113] [DEBUG] app - debug test from ps-log4js.js
+[2012-10-08 09:56:28.074] [INFO] app - info test from ps-log4js.js
+[2012-10-08 09:56:28.114] [INFO] app - info test from ps-log4js.js
+[2012-10-08 09:56:28.074] [WARN] app - warn test from ps-log4js.js
+[2012-10-08 09:56:28.114] [WARN] app - warn test from ps-log4js.js
+[2012-10-08 09:56:28.074] [ERROR] app - error test from ps-log4js.js
+[2012-10-08 09:56:28.114] [ERROR] app - error test from ps-log4js.js
+[2012-10-08 09:56:28.074] [FATAL] app - fatal test from ps-log4js.js
+[2012-10-08 09:56:28.116] [FATAL] app - fatal test from ps-log4js.js
+[2012-10-08 09:56:28.075] [DEBUG] app - log4js initialized
+[2012-10-08 09:56:28.117] [DEBUG] app - log4js initialized
+[2012-10-08 09:57:21.114] [DEBUG] app - log4js initialized
+[2012-10-08 09:57:21.150] [DEBUG] app - log4js initialized
+[2012-10-08 09:57:58.369] [DEBUG] app - log4js initialized
+[2012-10-08 09:57:58.407] [DEBUG] app - log4js initialized
+[2012-10-08 10:27:36.719] [DEBUG] app - log4js initialized
+[2012-10-08 10:27:36.767] [DEBUG] app - log4js initialized
+[2012-10-08 10:27:36.772] [INFO] app - settings.fleetPor: 
+[2012-10-08 10:30:41.860] [DEBUG] app - log4js initialized
+[2012-10-08 10:30:41.905] [DEBUG] app - log4js initialized
+[2012-10-08 10:31:55.710] [DEBUG] app - log4js initialized
+[2012-10-08 10:31:55.774] [DEBUG] app - log4js initialized
+[2012-10-08 10:32:51.735] [DEBUG] app - log4js initialized
+[2012-10-08 10:32:51.783] [DEBUG] app - log4js initialized
+[2012-10-08 10:32:51.784] [INFO] app - 1 settings.fleetPor: 
+[2012-10-08 10:33:49.011] [DEBUG] app - log4js initialized
+[2012-10-08 10:33:49.065] [DEBUG] app - log4js initialized
+[2012-10-08 10:33:49.073] [INFO] app - 1 settings.fleetPor: 
+[2012-10-08 10:35:00.187] [DEBUG] app - log4js initialized
+[2012-10-08 10:35:00.230] [DEBUG] app - log4js initialized
+[2012-10-08 10:35:00.236] [INFO] app - 1 settings.fleetPor: 
