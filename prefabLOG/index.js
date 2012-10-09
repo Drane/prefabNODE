@@ -21,8 +21,11 @@ module.exports = exports = prefabLOG = function prefabLOG_module(options){
 	
 	var public_methods = {};
 	
+	console.log("pre-clear");
+	
 	if(settings.clearConsoleOnLoad)
 		console.log('\033[2J');
+	console.log("post-clear");
 	
 	console.log("in prefabLOG");
 	

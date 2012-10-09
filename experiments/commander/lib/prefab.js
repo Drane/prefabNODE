@@ -40,10 +40,8 @@ module.exports = exports = prefab = function prefab_module(options){
 	function getSeaports(){
 		startSeaportServer();
 		
-//		var ports = seaport.connect('localhost', settings.seaPort);
-		var ports = seaport('staging').connect('localhost', settings.seaPort);
-		
-		console.log(ports);
+		var ports = seaport.connect('localhost', settings.seaPort);
+		console.log("getSeaports()",ports);
 		
 		return ports;
 	}
